@@ -20,7 +20,7 @@ body {
   top: 0;
   z-index: 1000;
   height: 60px;
-  position: relative;
+  position: sticky;
 }
 
 .bakery-icon {
@@ -295,6 +295,89 @@ margin-top: 2rem;
 
 .card:hover .overlay {
   opacity: 1;
+}
+
+.reviews {
+  padding: 4rem 1rem;
+ background: linear-gradient(135deg, orange, #000);
+  text-align: center;
+}
+
+.reviews h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #222222;
+}
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 700px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.review {
+  flex: 0 0 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.review img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.review p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #131111f3;
+}
+
+.review .stars {
+  color: orange;
+  margin-bottom: 0.5rem;
+}
+
+.review h4 {
+  font-weight: 500;
+  color: #2c2a2a;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #222;
+  padding: 0 1rem;
+  transition: color 0.3s;
+}
+
+.arrow:hover {
+  color: orange;
+}
+
+@media (max-width: 768px) {
+  .review p {
+    font-size: 1rem;
+  }
 }
 
 .overlay i {
